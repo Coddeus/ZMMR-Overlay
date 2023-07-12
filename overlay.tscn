@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://364a6hbimsdo"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_onxos"]
-[ext_resource type="Texture2D" uid="uid://dshfd5pvad5xs" path="res://assets/map.jpg" id="2_66mx5"]
+[ext_resource type="Texture2D" uid="uid://cn8i7e2at372w" path="res://assets/map.png" id="2_kpf0o"]
 
 [node name="Overlay" type="Control"]
 layout_mode = 3
@@ -25,7 +25,7 @@ layout_mode = 0
 offset_right = 1333.0
 offset_bottom = 948.0
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("2_66mx5")
+texture = ExtResource("2_kpf0o")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="BgColor"]
 custom_minimum_size = Vector2(100, 600)
