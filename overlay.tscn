@@ -1,9 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://364a6hbimsdo"]
+[gd_scene load_steps=5 format=3 uid="uid://364a6hbimsdo"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_onxos"]
-[ext_resource type="Texture2D" uid="uid://cn8i7e2at372w" path="res://assets/map.png" id="2_kpf0o"]
+[ext_resource type="Texture2D" uid="uid://x4a3e3jqdljf" path="res://assets/termina.png" id="2_ck2wg"]
+[ext_resource type="FontFile" uid="uid://bgel3t5tvuu4e" path="res://assets/DrgnHunter.otf" id="3_n3rwh"]
+
+[sub_resource type="FontVariation" id="FontVariation_dafns"]
+base_font = ExtResource("3_n3rwh")
+variation_transform = Transform2D(1, 0.5, 0, 1, 0, 0)
 
 [node name="Overlay" type="Control"]
+modulate = Color(1, 1, 0.784314, 0.784314)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -18,25 +24,27 @@ anchors_preset = -1
 anchor_bottom = 0.018
 offset_right = 800.0
 offset_bottom = 589.2
-color = Color(0.509804, 0.666667, 0.509804, 0.392157)
+color = Color(0.392157, 0.294118, 0.490196, 1)
 
 [node name="TextureRect" type="TextureRect" parent="BgColor"]
 layout_mode = 0
 offset_right = 1333.0
 offset_bottom = 948.0
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("2_kpf0o")
+texture = ExtResource("2_ck2wg")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="BgColor"]
-custom_minimum_size = Vector2(100, 600)
+custom_minimum_size = Vector2(100, 400)
 layout_mode = 2
 offset_left = 420.0
+offset_top = 90.0
 offset_right = 800.0
 offset_bottom = 600.0
-focus_mode = 2
-theme_override_font_sizes/normal_font_size = 14
+theme_override_fonts/normal_font = ExtResource("3_n3rwh")
+theme_override_fonts/italics_font = SubResource("FontVariation_dafns")
+theme_override_font_sizes/normal_font_size = 12
 theme_override_font_sizes/bold_font_size = 14
-theme_override_font_sizes/italics_font_size = 14
+theme_override_font_sizes/italics_font_size = 9
 theme_override_font_sizes/bold_italics_font_size = 14
 theme_override_font_sizes/mono_font_size = 14
 bbcode_enabled = true
@@ -74,5 +82,19 @@ text = "- Hereee
 
 
 
+
+
+
+
 SCROLL ME!!!"
-selection_enabled = true
+
+[node name="Label" type="Label" parent="BgColor"]
+layout_mode = 0
+offset_left = 534.0
+offset_top = 21.0
+offset_right = 667.0
+offset_bottom = 81.0
+theme_override_colors/font_color = Color(0.509804, 0.941176, 1, 1)
+theme_override_fonts/font = ExtResource("3_n3rwh")
+theme_override_font_sizes/font_size = 40
+text = "0 / 395"
