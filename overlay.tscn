@@ -1,12 +1,24 @@
-[gd_scene load_steps=5 format=3 uid="uid://364a6hbimsdo"]
+[gd_scene load_steps=17 format=3 uid="uid://364a6hbimsdo"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_onxos"]
-[ext_resource type="Texture2D" uid="uid://x4a3e3jqdljf" path="res://assets/termina.png" id="2_ck2wg"]
+[ext_resource type="Texture2D" uid="uid://x4a3e3jqdljf" path="res://assets/map/termina.png" id="2_vxham"]
 [ext_resource type="FontFile" uid="uid://bgel3t5tvuu4e" path="res://assets/DrgnHunter.otf" id="3_n3rwh"]
+[ext_resource type="Texture2D" uid="uid://b1x4bifi130gd" path="res://assets/map/Clocktown.png" id="3_rhx48"]
+[ext_resource type="Texture2D" uid="uid://bf5lv70se1arv" path="res://assets/map/Great_bay.png" id="4_2p5y1"]
+[ext_resource type="BitMap" uid="uid://l2d8dxlev45d" path="res://assets/map/Clocktown_mask.png" id="4_i46ic"]
+[ext_resource type="Texture2D" uid="uid://dywmthps8batl" path="res://assets/map/Ikana_valley.png" id="5_hhbae"]
+[ext_resource type="Texture2D" uid="uid://1xb07i5c06yk" path="res://assets/map/Milk_road.png" id="6_1y5ta"]
+[ext_resource type="BitMap" uid="uid://ohhfcnjylx4s" path="res://assets/map/Great_bay_mask.png" id="6_g5uwg"]
+[ext_resource type="Texture2D" uid="uid://dm4o42bcrro3t" path="res://assets/map/Snowhead.png" id="7_hlav0"]
+[ext_resource type="BitMap" uid="uid://dqtyn5rk6qku6" path="res://assets/map/Ikana_valley_mask.png" id="8_rejbb"]
+[ext_resource type="BitMap" uid="uid://xmx0luxirlng" path="res://assets/map/Milk_road_mask.png" id="10_0aqyg"]
+[ext_resource type="BitMap" uid="uid://dus7tbl5rjlso" path="res://assets/map/Snowhead_mask.png" id="12_mrah3"]
+[ext_resource type="BitMap" uid="uid://chduwo6ycokm2" path="res://assets/map/Southern_swamp_mask.png" id="13_7rhh6"]
+[ext_resource type="Texture2D" uid="uid://dbltecu2wuq3v" path="res://assets/map/Southern_swamp.png" id="13_o6vcb"]
 
 [sub_resource type="FontVariation" id="FontVariation_dafns"]
 base_font = ExtResource("3_n3rwh")
-variation_transform = Transform2D(1, 0.5, 0, 1, 0, 0)
+variation_transform = Transform2D(1, 0.3, 0, 1, 0, 0)
 
 [node name="Overlay" type="Control"]
 modulate = Color(1, 1, 0.784314, 0.784314)
@@ -28,10 +40,62 @@ color = Color(0.392157, 0.294118, 0.490196, 1)
 
 [node name="TextureRect" type="TextureRect" parent="BgColor"]
 layout_mode = 0
-offset_right = 1333.0
-offset_bottom = 948.0
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("2_ck2wg")
+offset_right = 400.0
+offset_bottom = 284.0
+texture = ExtResource("2_vxham")
+
+[node name="Clocktown" type="TextureButton" parent="BgColor/TextureRect"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 284.0
+texture_hover = ExtResource("3_rhx48")
+texture_click_mask = ExtResource("4_i46ic")
+
+[node name="Great_bay" type="TextureButton" parent="BgColor/TextureRect"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 284.0
+texture_hover = ExtResource("4_2p5y1")
+texture_click_mask = ExtResource("6_g5uwg")
+
+[node name="Ikana_valley" type="TextureButton" parent="BgColor/TextureRect"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 284.0
+texture_hover = ExtResource("5_hhbae")
+texture_click_mask = ExtResource("8_rejbb")
+
+[node name="Milk_road" type="TextureButton" parent="BgColor/TextureRect"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 284.0
+texture_hover = ExtResource("6_1y5ta")
+texture_click_mask = ExtResource("10_0aqyg")
+
+[node name="Snowhead" type="TextureButton" parent="BgColor/TextureRect"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 284.0
+texture_hover = ExtResource("7_hlav0")
+texture_click_mask = ExtResource("12_mrah3")
+
+[node name="Southern_swamp" type="TextureButton" parent="BgColor/TextureRect"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 284.0
+texture_hover = ExtResource("13_o6vcb")
+texture_click_mask = ExtResource("13_7rhh6")
+
+[node name="Label" type="Label" parent="BgColor"]
+layout_mode = 0
+offset_left = 534.0
+offset_top = 21.0
+offset_right = 670.0
+offset_bottom = 81.0
+theme_override_colors/font_color = Color(0.509804, 0.941176, 1, 1)
+theme_override_fonts/font = ExtResource("3_n3rwh")
+theme_override_font_sizes/font_size = 40
+text = "0 / 393"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="BgColor"]
 custom_minimum_size = Vector2(100, 400)
@@ -87,14 +151,3 @@ text = "- Hereee
 
 
 SCROLL ME!!!"
-
-[node name="Label" type="Label" parent="BgColor"]
-layout_mode = 0
-offset_left = 534.0
-offset_top = 21.0
-offset_right = 667.0
-offset_bottom = 81.0
-theme_override_colors/font_color = Color(0.509804, 0.941176, 1, 1)
-theme_override_fonts/font = ExtResource("3_n3rwh")
-theme_override_font_sizes/font_size = 40
-text = "0 / 395"
