@@ -1,7 +1,7 @@
 [gd_scene load_steps=17 format=3 uid="uid://364a6hbimsdo"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_onxos"]
-[ext_resource type="Texture2D" uid="uid://x4a3e3jqdljf" path="res://assets/map/termina.png" id="2_vxham"]
+[ext_resource type="Texture2D" uid="uid://x4a3e3jqdljf" path="res://assets/map/Termina.png" id="2_11rk7"]
 [ext_resource type="FontFile" uid="uid://bgel3t5tvuu4e" path="res://assets/DrgnHunter.otf" id="3_n3rwh"]
 [ext_resource type="Texture2D" uid="uid://b1x4bifi130gd" path="res://assets/map/Clocktown.png" id="3_rhx48"]
 [ext_resource type="Texture2D" uid="uid://bf5lv70se1arv" path="res://assets/map/Great_bay.png" id="4_2p5y1"]
@@ -42,7 +42,7 @@ color = Color(0.392157, 0.294118, 0.490196, 1)
 layout_mode = 0
 offset_right = 400.0
 offset_bottom = 284.0
-texture = ExtResource("2_vxham")
+texture = ExtResource("2_11rk7")
 
 [node name="Clocktown" type="TextureButton" parent="BgColor/TextureRect"]
 layout_mode = 0
@@ -151,3 +151,10 @@ text = "- Hereee
 
 
 SCROLL ME!!!"
+
+[connection signal="pressed" from="BgColor/TextureRect/Clocktown" to="." method="_on_clocktown_pressed"]
+[connection signal="pressed" from="BgColor/TextureRect/Great_bay" to="." method="_on_great_bay_pressed"]
+[connection signal="pressed" from="BgColor/TextureRect/Ikana_valley" to="." method="_on_ikana_valley_pressed"]
+[connection signal="pressed" from="BgColor/TextureRect/Milk_road" to="." method="_on_milk_road_pressed"]
+[connection signal="pressed" from="BgColor/TextureRect/Snowhead" to="." method="_on_snowhead_pressed"]
+[connection signal="pressed" from="BgColor/TextureRect/Southern_swamp" to="." method="_on_southern_swamp_pressed"]
