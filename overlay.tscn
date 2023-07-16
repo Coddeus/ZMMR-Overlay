@@ -1,20 +1,20 @@
 [gd_scene load_steps=17 format=3 uid="uid://364a6hbimsdo"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_onxos"]
-[ext_resource type="Texture2D" uid="uid://x4a3e3jqdljf" path="res://assets/map/Termina.png" id="2_11rk7"]
-[ext_resource type="FontFile" uid="uid://bgel3t5tvuu4e" path="res://assets/DrgnHunter.otf" id="3_n3rwh"]
-[ext_resource type="Texture2D" uid="uid://b1x4bifi130gd" path="res://assets/map/Clocktown.png" id="3_rhx48"]
-[ext_resource type="Texture2D" uid="uid://bf5lv70se1arv" path="res://assets/map/Great_bay.png" id="4_2p5y1"]
-[ext_resource type="BitMap" uid="uid://l2d8dxlev45d" path="res://assets/map/Clocktown_mask.png" id="4_i46ic"]
-[ext_resource type="Texture2D" uid="uid://dywmthps8batl" path="res://assets/map/Ikana_valley.png" id="5_hhbae"]
-[ext_resource type="Texture2D" uid="uid://1xb07i5c06yk" path="res://assets/map/Milk_road.png" id="6_1y5ta"]
-[ext_resource type="BitMap" uid="uid://ohhfcnjylx4s" path="res://assets/map/Great_bay_mask.png" id="6_g5uwg"]
-[ext_resource type="Texture2D" uid="uid://dm4o42bcrro3t" path="res://assets/map/Snowhead.png" id="7_hlav0"]
-[ext_resource type="BitMap" uid="uid://dqtyn5rk6qku6" path="res://assets/map/Ikana_valley_mask.png" id="8_rejbb"]
-[ext_resource type="BitMap" uid="uid://xmx0luxirlng" path="res://assets/map/Milk_road_mask.png" id="10_0aqyg"]
-[ext_resource type="BitMap" uid="uid://dus7tbl5rjlso" path="res://assets/map/Snowhead_mask.png" id="12_mrah3"]
-[ext_resource type="BitMap" uid="uid://chduwo6ycokm2" path="res://assets/map/Southern_swamp_mask.png" id="13_7rhh6"]
-[ext_resource type="Texture2D" uid="uid://dbltecu2wuq3v" path="res://assets/map/Southern_swamp.png" id="13_o6vcb"]
+[ext_resource type="Texture2D" uid="uid://clwjfq64mysvq" path="res://assets/map/termina.png" id="2_11rk7"]
+[ext_resource type="FontFile" uid="uid://c8pp3wlu1cwov" path="res://assets/DrgnHunter.otf" id="3_n3rwh"]
+[ext_resource type="Texture2D" uid="uid://d21cror81k2hu" path="res://assets/map/Clocktown.png" id="3_rhx48"]
+[ext_resource type="Texture2D" uid="uid://ckn816ikfyo57" path="res://assets/map/Great_bay.png" id="4_2p5y1"]
+[ext_resource type="BitMap" uid="uid://bl0bfosucp1au" path="res://assets/map/Clocktown_mask.png" id="4_o0jsc"]
+[ext_resource type="Texture2D" uid="uid://d284s4m6qlxel" path="res://assets/map/Ikana_valley.png" id="5_hhbae"]
+[ext_resource type="Texture2D" uid="uid://dxnxwcojghdtd" path="res://assets/map/Milk_road.png" id="6_1y5ta"]
+[ext_resource type="BitMap" uid="uid://b0kh5vbky47ej" path="res://assets/map/Great_bay_mask.png" id="6_srjb2"]
+[ext_resource type="Texture2D" uid="uid://cxgat6qvtdfxi" path="res://assets/map/Snowhead.png" id="7_hlav0"]
+[ext_resource type="BitMap" uid="uid://drpphaoi3rnn" path="res://assets/map/Ikana_valley_mask.png" id="8_vsv34"]
+[ext_resource type="BitMap" uid="uid://srvm1yipk6bb" path="res://assets/map/Milk_road_mask.png" id="10_vqu0b"]
+[ext_resource type="BitMap" uid="uid://brh4qq2hnvti7" path="res://assets/map/Snowhead_mask.png" id="12_qqxdq"]
+[ext_resource type="Texture2D" uid="uid://bwsq4vxqwbp25" path="res://assets/map/Southern_swamp.png" id="13_o6vcb"]
+[ext_resource type="BitMap" uid="uid://br6ujnc0ss0l6" path="res://assets/map/Southern_swamp_mask.png" id="14_63gxn"]
 
 [sub_resource type="FontVariation" id="FontVariation_dafns"]
 base_font = ExtResource("3_n3rwh")
@@ -49,42 +49,42 @@ layout_mode = 0
 offset_right = 400.0
 offset_bottom = 284.0
 texture_hover = ExtResource("3_rhx48")
-texture_click_mask = ExtResource("4_i46ic")
+texture_click_mask = ExtResource("4_o0jsc")
 
 [node name="Great_bay" type="TextureButton" parent="BgColor/TextureRect"]
 layout_mode = 0
 offset_right = 400.0
 offset_bottom = 284.0
 texture_hover = ExtResource("4_2p5y1")
-texture_click_mask = ExtResource("6_g5uwg")
+texture_click_mask = ExtResource("6_srjb2")
 
 [node name="Ikana_valley" type="TextureButton" parent="BgColor/TextureRect"]
 layout_mode = 0
 offset_right = 400.0
 offset_bottom = 284.0
 texture_hover = ExtResource("5_hhbae")
-texture_click_mask = ExtResource("8_rejbb")
+texture_click_mask = ExtResource("8_vsv34")
 
 [node name="Milk_road" type="TextureButton" parent="BgColor/TextureRect"]
 layout_mode = 0
 offset_right = 400.0
 offset_bottom = 284.0
 texture_hover = ExtResource("6_1y5ta")
-texture_click_mask = ExtResource("10_0aqyg")
+texture_click_mask = ExtResource("10_vqu0b")
 
 [node name="Snowhead" type="TextureButton" parent="BgColor/TextureRect"]
 layout_mode = 0
 offset_right = 400.0
 offset_bottom = 284.0
 texture_hover = ExtResource("7_hlav0")
-texture_click_mask = ExtResource("12_mrah3")
+texture_click_mask = ExtResource("12_qqxdq")
 
 [node name="Southern_swamp" type="TextureButton" parent="BgColor/TextureRect"]
 layout_mode = 0
 offset_right = 400.0
 offset_bottom = 284.0
 texture_hover = ExtResource("13_o6vcb")
-texture_click_mask = ExtResource("13_7rhh6")
+texture_click_mask = ExtResource("14_63gxn")
 
 [node name="Label" type="Label" parent="BgColor"]
 layout_mode = 0

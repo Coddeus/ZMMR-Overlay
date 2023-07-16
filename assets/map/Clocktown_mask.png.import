@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bl0bfosucp1au"
+path="res://.godot/imported/Clocktown_mask.png-287708f40ab7d012f278a3deb41237a2.res"
+
+[deps]
+
+source_file="res://assets/map/Clocktown_mask.png"
+dest_files=["res://.godot/imported/Clocktown_mask.png-287708f40ab7d012f278a3deb41237a2.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

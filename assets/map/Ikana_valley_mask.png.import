@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://drpphaoi3rnn"
+path="res://.godot/imported/Ikana_valley_mask.png-11848affea53e6ea2de56c439c4386ba.res"
+
+[deps]
+
+source_file="res://assets/map/Ikana_valley_mask.png"
+dest_files=["res://.godot/imported/Ikana_valley_mask.png-11848affea53e6ea2de56c439c4386ba.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://br6ujnc0ss0l6"
+path="res://.godot/imported/Southern_swamp_mask.png-d751d00443065472d0bd7c259eebccdb.res"
+
+[deps]
+
+source_file="res://assets/map/Southern_swamp_mask.png"
+dest_files=["res://.godot/imported/Southern_swamp_mask.png-d751d00443065472d0bd7c259eebccdb.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

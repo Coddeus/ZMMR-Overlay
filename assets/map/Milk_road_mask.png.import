@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://srvm1yipk6bb"
+path="res://.godot/imported/Milk_road_mask.png-391047ee6057a13d07e86dc99042d483.res"
+
+[deps]
+
+source_file="res://assets/map/Milk_road_mask.png"
+dest_files=["res://.godot/imported/Milk_road_mask.png-391047ee6057a13d07e86dc99042d483.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

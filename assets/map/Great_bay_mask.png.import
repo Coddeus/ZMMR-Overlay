@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://b0kh5vbky47ej"
+path="res://.godot/imported/Great_bay_mask.png-8664cd381dda36298bdac1192465fbcd.res"
+
+[deps]
+
+source_file="res://assets/map/Great_bay_mask.png"
+dest_files=["res://.godot/imported/Great_bay_mask.png-8664cd381dda36298bdac1192465fbcd.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

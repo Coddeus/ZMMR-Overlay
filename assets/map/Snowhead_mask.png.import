@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://brh4qq2hnvti7"
+path="res://.godot/imported/Snowhead_mask.png-6b5e5b37859511617fc3054e5c6b002e.res"
+
+[deps]
+
+source_file="res://assets/map/Snowhead_mask.png"
+dest_files=["res://.godot/imported/Snowhead_mask.png-6b5e5b37859511617fc3054e5c6b002e.res"]
+
+[params]
+
+create_from=0
+threshold=0.5
